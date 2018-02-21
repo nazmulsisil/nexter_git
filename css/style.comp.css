@@ -25,9 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: #54483A;
+  color: white;
+  line-height: 1.6;
   font-family: "Nunito", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 .btn {
   font-family: inherit;
@@ -51,7 +52,6 @@ body {
   padding: 4rem 0 6rem 2rem;
   grid-area: 2 / ls-start / 3 / col-end 6;
   display: grid;
-  grid-gap: 4rem;
   grid-template-rows: 1fr minmax(6rem, min-content) 1fr min-content;
   grid-template-columns: minmax(min-content, max-content);
   justify-content: center; }
@@ -95,7 +95,41 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-area: 2 / col-start 7 / 3 / grid-end; }
+  grid-area: 2 / col-start 7 / 3 / grid-end;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .realtors {
+      grid-template-rows: max-content; } }
+  .realtors > h3 {
+    justify-self: center;
+    font-weight: 100;
+    font-size: 1.4; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; }
+    @media only screen and (max-width: 50em) {
+      .realtors__list {
+        grid-auto-flow: column; } }
+  .realtors__featured {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 1rem; }
+  .realtors__pic {
+    height: 6rem;
+    border-radius: 50%; }
+  .realtors__name {
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100; }
+  .realtors__sell {
+    font-size: 1rem;
+    filter: brightness(0.6); }
   @media only screen and (max-width: 50em) {
     .realtors {
       grid-area: 3 / 2 / 4 / -1; } }
@@ -128,30 +162,4 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-area: 9 / ls-start  / 10 / grid-end;
-  padding: 12rem 6rem; }
-  .footer .nav {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    align-items: center; }
-    .footer .nav__item {
-      list-style: none;
-      padding: 1.5rem;
-      text-align: center;
-      transition: all .2s; }
-      .footer .nav__item:hover {
-        transform: translateY(-4px);
-        background-color: rgba(255, 255, 255, 0.1); }
-    .footer .nav__link:link, .footer .nav__link:visited {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #f9f7f6;
-      font-size: 1.2rem;
-      line-height: 1rem !important; }
-  .footer .copyright {
-    color: #aaa;
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 8rem; }
+  grid-area: 9 / ls-start  / 10 / grid-end; }
