@@ -74,8 +74,4 @@
     filter: brightness(70%);
   }
 
-  @include respond(800) {
-    grid-area: 2 / 2 / 3 / -1;
-    
-  }
 }

@@ -3,8 +3,4 @@
   background-color: $color-secondary;
   grid-area: 2 / col-start 7 / 3 / grid-end;
   
-  @include respond(800) {
-    grid-area: 3 / 2 / 4 / -1;
-  }
-
 }

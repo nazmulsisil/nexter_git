@@ -1,3 +1,69 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+}
+
+@mixin  absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY FACTORY
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width:37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width:56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width:75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big {
+    @media only screen and (min-width:112.5em) {
+      @content;    
+    }
+  }
+  
+  @if $breakpoint == 1000 {
+    @media only screen and (max-width:62.5em) {
+      @content;    
+    }
+  }
+  
+  @if $breakpoint == 800 {
+    @media only screen and (max-width:50em) {
+      @content;    
+    }
+  }
+  
+  @if $breakpoint == 600 {
+    @media only screen and (max-width:37.5em) {
+      @content;    
+    }
+  }
+  
+}
+
+
+
+
+
 // COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #B28451;
