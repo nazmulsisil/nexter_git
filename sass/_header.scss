@@ -6,10 +6,10 @@
   grid-area: 2 / ls-start / 3 / col-end 6;
 
   display: grid;
-  grid-gap: 4rem;
   grid-template-rows: 1fr minmax(6rem, min-content) 1fr min-content;
   grid-template-columns: minmax(min-content, max-content);
   justify-content: center;
+
 
   &__logo {
     height: 3rem;

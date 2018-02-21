@@ -3,9 +3,65 @@
 .realtors {
   background-color: $color-secondary;
   grid-area: 2 / col-start 7 / 3 / grid-end;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 1rem;
+
+  @include respond(800) {
+    grid-template-rows: max-content;
+  }
+
+  & > h3 {
+    justify-self: center;
+    font-weight: 100; 
+    font-size: 1.4;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @include respond(800) {
+      grid-auto-flow: column;
+    }
+   
+  }
+  
+  &__featured {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 1rem; 
+  }
+  
+  &__pic {
+    height: 6rem;
+    border-radius: 50%;
+  }
+  
+  &__stat {
+  }
+  
+  &__name {
+    font-size: 1.4rem;
+    font-family: $font-display;
+    font-weight: 100;
+
+  }
+  
+  &__sell {
+    font-size: 1rem;
+    filter: brightness(.6);
+
+  }
+
   
   @include respond(800) {
     grid-area: 3 / 2 / 4 / -1;
   }
 
 }
+
