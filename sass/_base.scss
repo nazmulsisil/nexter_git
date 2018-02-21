@@ -13,3 +13,45 @@ $color-grey-dark-2: #6D5D4B;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+  
+html {
+  font-size: 62.5%; 
+  
+  @include respond(1000) {    
+    font-size: 50%; 
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+}
+
+body {
+  box-sizing: border-box;
+  color: white; //$color-grey-dark-1
+  line-height: 1.6;
+  font-family: $font-primary;
+  font-size: 2rem;
+}
+
+
+.btn {
+  font-family: inherit;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: $color-primary;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  color: $color-grey-light-1;
+}

@@ -1,0 +1,18 @@
+.story__description {
+  background-color: rgba(43, 255, 0, 0.199); // delete
+  grid-area: 6 / col-start 5  / 7 / grid-end;
+
+  @include respond(800) {
+    grid-area: 5 / ls-start  / 6 / grid-end;
+  }
+}
+
+
+.story__pictures {
+  background-color: rgba(0, 0, 255, 0.199); // delete
+  grid-area: 6 / ls-start  / 7 / col-end 4  ;
+
+  @include respond(800) {
+    grid-area: 6 / ls-start  / 7 / grid-end;
+  }
+}
