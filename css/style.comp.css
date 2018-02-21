@@ -6,7 +6,6 @@
   box-sizing: inherit; }
 
 .container {
-  padding: 3rem;
   display: grid;
   grid-template-columns: [nav-start] 8rem [nav-end ls-start] minmax(4rem, 1fr) [ls-end center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end rs-start] minmax(4rem, 1fr) [rs-end grid-end];
   grid-template-rows: min-content 80vh min-content min-content min-content 40vw repeat(3, min-content); }
@@ -26,10 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: white;
-  line-height: 1.6;
+  color: #54483A;
   font-family: "Nunito", sans-serif;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 .btn {
   font-family: inherit;
@@ -53,6 +51,7 @@ body {
   padding: 4rem 0 6rem 2rem;
   grid-area: 2 / ls-start / 3 / col-end 6;
   display: grid;
+  grid-gap: 4rem;
   grid-template-rows: 1fr minmax(6rem, min-content) 1fr min-content;
   grid-template-columns: minmax(min-content, max-content);
   justify-content: center; }
@@ -129,4 +128,30 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-area: 9 / ls-start  / 10 / grid-end; }
+  grid-area: 9 / ls-start  / 10 / grid-end;
+  padding: 12rem 6rem; }
+  .footer .nav {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center; }
+    .footer .nav__item {
+      list-style: none;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all .2s; }
+      .footer .nav__item:hover {
+        transform: translateY(-4px);
+        background-color: rgba(255, 255, 255, 0.1); }
+    .footer .nav__link:link, .footer .nav__link:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #f9f7f6;
+      font-size: 1.2rem;
+      line-height: 1rem !important; }
+  .footer .copyright {
+    color: #aaa;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 8rem; }
