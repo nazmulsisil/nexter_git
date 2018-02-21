@@ -103,7 +103,8 @@ body {
 
 .features {
   background-color: #aaa;
-  grid-area: 4 / center-start  / 5 / center-end; }
+  grid-area: 4 / center-start  / 5 / center-end;
+  display: grid; }
 
 .story__description {
   background-color: rgba(43, 255, 0, 0.199);
