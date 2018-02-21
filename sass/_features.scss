@@ -1,4 +1,40 @@
 .features {
-  background-color: $color-grey-light-2; // delete
+  padding : 8rem 0 ;
+  font-size: 1.6rem;
+  font-weight: 100;
   grid-area: 4 / center-start  / 5 / center-end  ;
+
+
+
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+  grid-gap: 4rem 8rem;
+
+
+
+  &__box {  
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem;
+  } 
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-primary;
+  }
+
+  &__text {
+
+  }
+
+  &__h1 {
+    font-weight: 100; 
+    margin-bottom: 2rem;
+  }
+
+  &__p {
+
+  }
+
 }

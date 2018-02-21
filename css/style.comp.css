@@ -6,7 +6,6 @@
   box-sizing: inherit; }
 
 .container {
-  padding: 3rem;
   display: grid;
   grid-template-columns: [nav-start] 8rem [nav-end ls-start] minmax(4rem, 1fr) [ls-end center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end rs-start] minmax(4rem, 1fr) [rs-end grid-end];
   grid-template-rows: min-content 80vh min-content min-content min-content 40vw repeat(3, min-content); }
@@ -26,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: white;
+  color: #54483A;
   line-height: 1.6;
   font-family: "Nunito", sans-serif;
   font-size: 2rem; }
@@ -96,14 +95,64 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-area: 2 / col-start 7 / 3 / grid-end; }
+  grid-area: 2 / col-start 7 / 3 / grid-end;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .realtors {
+      grid-template-rows: max-content; } }
+  .realtors > h3 {
+    justify-self: center;
+    font-weight: 100;
+    font-size: 1.4; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; }
+    @media only screen and (max-width: 50em) {
+      .realtors__list {
+        grid-auto-flow: column; } }
+  .realtors__featured {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 1rem; }
+  .realtors__pic {
+    height: 6rem;
+    border-radius: 50%; }
+  .realtors__name {
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100; }
+  .realtors__sell {
+    font-size: 1rem;
+    filter: brightness(0.6); }
   @media only screen and (max-width: 50em) {
     .realtors {
       grid-area: 3 / 2 / 4 / -1; } }
 
 .features {
-  background-color: #aaa;
-  grid-area: 4 / center-start  / 5 / center-end; }
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  font-weight: 100;
+  grid-area: 4 / center-start  / 5 / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 4rem 8rem; }
+  .features__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem; }
+  .features__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #c69963; }
+  .features__h1 {
+    font-weight: 100;
+    margin-bottom: 2rem; }
 
 .story__description {
   background-color: rgba(43, 255, 0, 0.199);
