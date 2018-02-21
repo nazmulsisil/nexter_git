@@ -88,7 +88,35 @@ $font-display: 'Josefin Sans', sans-serif;
   margin: 0;
   box-sizing: inherit;
 }
+
+.container {
+  padding: 3rem;
+
+  display: grid;
+
+  grid-template-columns: 
+  [nav-start] 
+  8rem [nav-end ls-start] 
+  minmax(4rem, 1fr) [ls-end center-start] 
+  repeat(8, [col-start] minmax(min-content, 15rem) [col-end] ) [center-end rs-start]
+  minmax(4rem, 1fr) [rs-end grid-end];
   
+  grid-template-rows: min-content 80vh min-content min-content min-content 40vw repeat(3, min-content);
+  
+  @include respond(1000) {
+    grid-template-rows: 6rem 80vh min-content min-content min-content 40vw repeat(3, min-content);
+
+    grid-template-columns: 
+    [nav-start] 
+    min-content [nav-end ls-start] 
+    minmax(4rem, 1fr) [ls-end center-start] 
+    repeat(8, [col-start] minmax(min-content, 15rem) [col-end] ) [center-end rs-start]
+    minmax(4rem, 1fr) [rs-end grid-end];
+
+  }
+
+}
+
 html {
   font-size: 62.5%; 
   
