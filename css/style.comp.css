@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: white;
+  color: #54483A;
   line-height: 1.6;
   font-family: "Nunito", sans-serif;
   font-size: 2rem; }
@@ -135,8 +135,24 @@ body {
       grid-area: 3 / 2 / 4 / -1; } }
 
 .features {
-  background-color: #aaa;
-  grid-area: 4 / center-start  / 5 / center-end; }
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  font-weight: 100;
+  grid-area: 4 / center-start  / 5 / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 4rem 8rem; }
+  .features__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem; }
+  .features__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #c69963; }
+  .features__h1 {
+    font-weight: 100;
+    margin-bottom: 2rem; }
 
 .story__description {
   background-color: rgba(43, 255, 0, 0.199);
