@@ -1,5 +1,83 @@
 
 .products {
-  background-color: $color-grey-light-2; // delete
   grid-area: 7 / center-start  / 8 / center-end  ;
+  padding: 10rem 0;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  
+  .card-holder {
+    width: 100%;
+    display: grid; 
+    grid-gap: 4rem;
+    align-items: center;
+    background-color: $color-grey-light-1; // delete
+
+    &__top {
+      height: 100%;
+      position: relative;
+    }
+  
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    &__top-ico {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      
+    }
+    
+    &__text {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      background-color: $color-secondary;
+      width: 80%;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: $font-primary;
+      color: $color-grey-light-1;
+      font-size: 1.4rem;
+      padding: 1rem;
+  
+    }
+  
+    &__bottom {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__ico {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-grey-dark-2;
+      position: absolute;
+      top: 50%;
+      left: -150%;
+      transform: translateY(-50%);
+    }
+  
+    &__house-details { 
+      position: relative;
+    }
+  
+    &__house-text {
+      font-size: 1rem;
+      
+    }
+  
+    &__btn {
+      width: 100%;
+    }
+  }
+  
+
 }
