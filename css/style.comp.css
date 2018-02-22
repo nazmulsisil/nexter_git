@@ -169,8 +169,61 @@ body {
       grid-area: 6 / ls-start  / 7 / grid-end; } }
 
 .products {
-  background-color: #aaa;
-  grid-area: 7 / center-start  / 8 / center-end; }
+  grid-area: 7 / center-start  / 8 / center-end;
+  padding: 10rem 0;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  .products .card-holder {
+    width: 100%;
+    display: grid;
+    grid-gap: 4rem;
+    align-items: center;
+    background-color: #f9f7f6; }
+    .products .card-holder__top {
+      height: 100%;
+      position: relative; }
+    .products .card-holder__img {
+      width: 100%;
+      object-fit: cover; }
+    .products .card-holder__top-ico {
+      fill: #c69963;
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem; }
+    .products .card-holder__text {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      background-color: #101d2c;
+      width: 80%;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: "Nunito", sans-serif;
+      color: #f9f7f6;
+      font-size: 1.4rem;
+      padding: 1rem; }
+    .products .card-holder__bottom {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr; }
+    .products .card-holder__ico {
+      width: 2rem;
+      height: 2rem;
+      fill: #6D5D4B;
+      position: absolute;
+      top: 50%;
+      left: -150%;
+      transform: translateY(-50%); }
+    .products .card-holder__house-details {
+      position: relative; }
+    .products .card-holder__house-text {
+      font-size: 1rem; }
+    .products .card-holder__btn {
+      width: 100%; }
 
 .gallery {
   background-color: rgba(255, 0, 0, 0.295);
