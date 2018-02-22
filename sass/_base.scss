@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: white; //$color-grey-dark-1
+  color: $color-grey-dark-1;
   line-height: 1.6;
   font-family: $font-primary;
   font-size: 2rem;

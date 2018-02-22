@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   box-sizing: border-box;
-  color: white;
+  color: #54483A;
   line-height: 1.6;
   font-family: "Nunito", sans-serif;
   font-size: 2rem; }
@@ -135,8 +135,24 @@ body {
       grid-area: 3 / 2 / 4 / -1; } }
 
 .features {
-  background-color: #aaa;
-  grid-area: 4 / center-start  / 5 / center-end; }
+  padding: 8rem 0;
+  font-size: 1.6rem;
+  font-weight: 100;
+  grid-area: 4 / center-start  / 5 / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 4rem 8rem; }
+  .features__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem; }
+  .features__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #c69963; }
+  .features__h1 {
+    font-weight: 100;
+    margin-bottom: 2rem; }
 
 .story__description {
   background-color: rgba(43, 255, 0, 0.199);
@@ -162,4 +178,30 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-area: 9 / ls-start  / 10 / grid-end; }
+  grid-area: 9 / ls-start  / 10 / grid-end;
+  padding: 12rem 6rem; }
+  .footer .nav {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center; }
+    .footer .nav__item {
+      list-style: none;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all .2s; }
+      .footer .nav__item:hover {
+        transform: translateY(-4px);
+        background-color: rgba(255, 255, 255, 0.1); }
+    .footer .nav__link:link, .footer .nav__link:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #f9f7f6;
+      font-size: 1.2rem;
+      line-height: 1rem !important; }
+  .footer .copyright {
+    color: #aaa;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 8rem; }
