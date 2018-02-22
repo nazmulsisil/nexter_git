@@ -8,11 +8,10 @@
   
   .card-holder {
     width: 100%;
-    display: grid;
+    display: grid; 
     grid-gap: 4rem;
     align-items: center;
-    justify-items: center;
-    background-color: $color-grey-light-2; // delete
+    background-color: $color-grey-light-1; // delete
 
     &__top {
       height: 100%;
@@ -25,6 +24,7 @@
     }
   
     &__top-ico {
+      fill: $color-primary;
       height: 2rem;
       width: 2rem;
       position: absolute;
@@ -41,11 +41,17 @@
       background-color: $color-secondary;
       width: 80%;
       text-align: center;
+      text-transform: capitalize;
+      font-family: $font-primary;
+      color: $color-grey-light-1;
+      font-size: 1.4rem;
+      padding: 1rem;
   
     }
   
     &__bottom {
       display: grid;
+      justify-items: center;
       grid-template-columns: 1fr 1fr;
     }
 
@@ -53,14 +59,19 @@
       width: 2rem;
       height: 2rem;
       fill: $color-grey-dark-2;
+      position: absolute;
+      top: 50%;
+      left: -150%;
+      transform: translateY(-50%);
     }
   
-    &__house-details {
-  
+    &__house-details { 
+      position: relative;
     }
   
     &__house-text {
-  
+      font-size: 1rem;
+      
     }
   
     &__btn {
