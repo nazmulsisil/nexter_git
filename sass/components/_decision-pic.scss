@@ -1,0 +1,52 @@
+.decision-pic {
+    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-915.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+    @include respond (tab-land) { 
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-603.jpg);
+    } 
+    @include respond (tab-mid) { 
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-500.jpg);
+    } 
+    @include respond (phone-mid) { 
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-845.jpg);
+    }    
+    
+    @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em),
+        only screen and (min-width: 112.5em) {
+            background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-1500.jpg);
+    } 
+
+    &__img {
+        
+
+        &--1 {
+            width: 69%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+            
+            @include respond (phone-mid) {
+                width: 61%;
+                left: 38%;
+            }
+        }
+
+        &--2 {
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            @include respond (phone-mid) {
+                width: 46%;
+                top: 30%;
+                left: 50%;
+            }
+        }
+    }
+}  

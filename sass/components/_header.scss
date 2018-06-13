@@ -1,0 +1,88 @@
+.header {
+    // background-color: $color-grey-dark-1;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-1221.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 8rem;
+    padding-top: 4rem;
+ 
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    @include respond (phone-mid) {
+        padding: 5rem;
+    }
+
+    @include respond (tab-land) { 
+        background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-831.jpg);
+    } 
+    @include respond (tab-mid) { 
+        background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-720.jpg);
+    } 
+    @include respond (phone-mid) { 
+        background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-831.jpg);
+    }
+    @include respond (phone) { 
+        background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-600.jpg);
+    }     
+    
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+        only screen and (min-width: 112.5em) {
+            background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-1499.jpg);
+    }
+
+    &__logo {
+        height: 3rem;
+
+        justify-self: center;
+    }
+
+ 
+ 
+    &__btn {
+        justify-self: start; 
+        align-self: start;
+    }
+
+    &__seenon-text {
+
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-gap: 1.5rem;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+
+    &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    &__seenon-png {
+        max-height: 2.5rem; 
+        max-width: 100%;
+        filter: brightness(70%);
+    }
+
+}  
+
+
+

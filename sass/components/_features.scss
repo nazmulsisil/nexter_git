@@ -1,0 +1,38 @@
+.features {
+
+    margin: 15rem 8vw;
+    
+
+    display: grid;
+    //  grid-template-columns: repeat(3, 25rem);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+
+    @include respond (tab-mid) {
+        margin: 15rem 0;
+    }
+}
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr; 
+    grid-column-gap: 2.5rem;  
+
+    &__text-box {
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+
+    &__icon { 
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        transform: translateY(-1rem);
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

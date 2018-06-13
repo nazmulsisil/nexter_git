@@ -5,407 +5,892 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boilerplate</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+
+    <title>nexter &mdash; your home, your freedom</title>
+
 
 </head>
 
 <body>
+
+
+
     <div class="container">
-        <div class="sidebar">Sb</div>
 
-        <div class="header">
+        <nav class="side-bar">
+            <button class="nav-btn"></button>
+        </nav>
 
-            <img src="./img/logo.png" alt="logo" class="header__logo">
+        <header class="header">
 
-            <div class="header__headings">
-                <h3 class="header__subheading">Your own home:</h3>
-                <h1 class="header__heading">The ultimate personal freedom</h1>
+            <img src="./img/logo.png" alt="header logo" class="header__logo">
+            <h3 class="heading-3">Your own home:</h3>
+            <h1 class="heading-1">The ultimate personal freedom</h1>
+            <button class="btn header__btn">View our properties</button>
+            <div class="header__seenon-text">Seen on</div>
+            <div class="header__seenon-logos">
+                <img src="img/logo-bbc.png" alt="Seen on logo 1" class="header__seenon-png">
+                <img src="img/logo-forbes.png" alt="Seen on logo 2" class="header__seenon-png">
+                <img src="img/logo-techcrunch.png" alt="Seen on logo 3" class="header__seenon-png">
+                <img src="img/logo-bi.png" alt="Seen on logo 4" class="header__seenon-png">
             </div>
-            <button class="btn header__btn">view our properties</button>
-            <div class="header__seen">
-                <div class="header__seen-pictures">
 
-                    <img src="./img/logo-techcrunch.png" alt="logo" class="header__ico">
-                    <img src="./img/logo-bbc.png" alt="logo" class="header__ico">
-                    <img src="./img/logo-forbes.png" alt="logo" class="header__ico">
-                    <img src="./img/logo-bi.png" alt="logo" class="header__ico">
-                </div>
-            </div>
-        </div>
+        </header>
 
-        <div class="realtors">
-            <h3 class=" header__subheading">Top 3 realtors</h3>
+        <nav class="realtors">
+            <h3 class="heading-3">top 3 realtors</h3>
             <div class="realtors__list">
-                <div class="realtors__featured">
-                    <img src="./img/realtor-1.jpeg" alt="top-realtor" class="realtors__pic">
-                    <div class="realtors__stat">
-                        <h3 class="realtors__name ">Eric Feinmann</h3>
-                        <div class="realtors__sell">245 Houses sold</div>
-                    </div>
+                <!-- <img src="./img/realtor-1-60.jpg" alt="realtors pic 1" class="realtors__img"> -->
+
+                <img srcset=" img/realtor-1-57.jpg 57w, img/realtor-1-164.jpg 164w, img/realtor-1-235.jpg 235w, img/realtor-1-297.jpg 297w, img/realtor-1-330.jpg 330w "
+                    sizes=" (min-width: 112.5em) 5vw, (max-width: 75em) 6vw, 80px" alt="realtors pic 1" class="realtors__img"
+                    src="img/realtor-1-330.jpg">
+
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
+                    <p class="realtors__sold">245 houses sold</p>
                 </div>
-                <div class="realtors__featured">
-                    <img src="./img/realtor-2.jpeg" alt="top-realtor" class="realtors__pic">
-                    <div class="realtors__stat">
-                        <h3 class="realtors__name ">Kim Brown</h3>
-                        <div class="realtors__sell">212 Houses sold</div>
-                    </div>
+
+                <!-- <img src="./img/realtor-2-60.jpg" alt="realtors pic 2" class="realtors__img"> -->
+
+                <img srcset=" img/realtor-2-57.jpg 57w, img/realtor-2-158.jpg 158w, img/realtor-2-224.jpg 224w, img/realtor-2-290.jpg 290w, img/realtor-2-330.jpg 330w "
+                    sizes=" (min-width: 112.5em) 5vw, (max-width: 75em) 6vw, 80px" alt="realtors pic 2" class="realtors__img"
+                    src="img/realtor-2-330.jpg">
+
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Kim Brown</h4>
+                    <p class="realtors__sold">212 houses sold</p>
                 </div>
-                <div class="realtors__featured">
-                    <img src="./img/realtor-3.jpeg" alt="top-realtor" class="realtors__pic">
-                    <div class="realtors__stat">
-                        <h3 class="realtors__name ">Toby Ramsey</h3>
-                        <div class="realtors__sell">198 Houses sold</div>
-                    </div>
+
+                <!-- <img src="./img/realtor-3-60.jpg" alt="realtors pic 3" class="realtors__img"> -->
+
+                <img srcset=" img/realtor-3-57.jpg 57w, img/realtor-3-166.jpg 166w, img/realtor-3-243.jpg 243w, img/realtor-3-305.jpg 305w, img/realtor-3-330.jpg 330w "
+                    sizes=" (min-width: 112.5em) 5vw, (max-width: 75em) 6vw, 80px" alt="realtors pic 3" class="realtors__img"
+                    src="img/realtor-3-330.jpg">
+
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
+                    <p class="realtors__sold">198 houses sold</p>
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div class="features">
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+        <section class="features">
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-global"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">World's best luxury homes</h3>
-                    <p class="features__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur
-                        voluptatibus.
-                    </p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">World's best luxury homes</h4>
+                    <p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur
+                        voluptatibus.</p>
                 </div>
             </div>
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-trophy"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">Only the best properties</h3>
-                    <p class="features__p">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">Only the best properties</h4>
+                    <p class="feature__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
                 </div>
             </div>
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-map-pin"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">All homes in in top locations</h3>
-                    <p class="features__p">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">All homes in in top locations</h4>
+                    <p class="feature__text">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
                 </div>
             </div>
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">World's best luxury homes</h3>
-                    <p class="features__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur
-                        voluptatibus.
-                    </p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">New home in one week</h4>
+                    <p class="feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-presentation"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">Only the best properties</h3>
-                    <p class="features__p">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+                    <p class="feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
                 </div>
             </div>
-            <div class="features__box">
-                <svg class="features__icon">
-                    <use xlink:href="./img/sprite.svg#icon-heart"></use>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-lock"></use>
                 </svg>
-                <div class="features__text">
-                    <h3 class="features__h1">All homes in in top locations</h3>
-                    <p class="features__p">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
+                <div class="feature__text-box">
+                    <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
+                    <p class="feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="story__pictures">
-                <img src="./img/story-1.jpeg" alt="" class="story__img">
-                <img src="./img/story-2.jpeg" alt="" class="story__img-small">
-        </div>
-        <div class="story__description">
-            <p>HAPPY CUSTOMERS</p>
-            <h1 class="story__h1">“The best decision of our lives”</h1>
-            <p class="story__lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!</p>
-            <button class="btn story__btn">find your own home</button>
-        </div>
+        <div class="decision">
 
-
-        <div class="products">
-
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-            <div class="card-holder">
-                <div class="card-holder__top">
-                    <img class="card-holder__img" src="./img/gal-1.jpeg" alt="beautiful-houses">
-                    <svg class="card-holder__top-ico">
-                        <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                    </svg>
-                    <div class="card-holder__text">beautiful family house</div>
-                </div>
-                <div class="card-holder__bottom">
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-                    <div class="card-holder__house-details">
-                        <svg class="card-holder__ico">
-                            <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
-                        </svg>
-                        <span class="card-holder__house-text">USA</span>
-                    </div>
-
-
-                </div>
-                <button class="card-holder__btn btn header__btn">contact realtor</button>
-
-            </div>
-
-
-
-        </div>
-
-        <div class="gallery">gallery</div>
-
-        <div class="footer">
-            <ul class="nav">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Find your dream home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Request proposal</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Download home planner</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contact us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Submit your property</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Come work with us!</a>
-                </li>
-            </ul>
-            <p class="copyright">
-                &copy; Copyright 2017 by Jonas Schmedtmann good. Feel free to use this project for your own purposes. This does NOT apply
-                if you plan to produce your own course or tutorials based on this project.
+            <h3 class="heading-3">Happy Customers</h3>
+            <h2 class="heading-2 heading-2--dark">&ldquo;The best decision of our lives&rdquo;</h2>
+            <p class="decision__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem
+                consequatur harum volupta!
             </p>
+            <button class="btn decision__btn">Find your own home</button>
+
         </div>
-        <!-- footer -->
+
+        <div class="decision-pic">
+            <!-- <img src="img/story-1.jpeg" alt="Couple with new house" class="decision-pic__img decision-pic__img--1"> -->
+
+            <img srcset="img/story-1-150.jpg 150w, img/story-1-294.jpg 294w, img/story-1-408.jpg 408w, img/story-1-505.jpg 505w, img/story-1-596.jpg 596w, img/story-1-678.jpg 678w, img/story-1-817.jpg 817w, img/story-1-1053.jpg 1053w, img/story-1-1204.jpg 1204w, img/story-1-1528.jpg 1528w, img/story-1-1700.jpg 1700w "
+                sizes=" (max-width: 75em) 33vw, (max-width: 50em) 60vw, 560px" alt="Couple with new house" class="decision-pic__img decision-pic__img--1"
+                src="img/story-1-1700.jpg">
+
+            <img srcset=" img/story-2-100.jpg 100w, img/story-2-186.jpg 186w, img/story-2-252.jpg 252w, img/story-2-313.jpg 313w, img/story-2-363.jpg 363w, img/story-2-529.jpg 529w, img/story-2-550.jpg 550w, img/story-2-660.jpg 660w, img/story-2-751.jpg 751w, img/story-2-793.jpg 793w, img/story-2-952.jpg 952w, img/story-2-1059.jpg 1059w, img/story-2-1093.jpg 1093w, img/story-2-1126.jpg 1126w, img/story-2-1599.jpg 1599w, img/story-2-1653.jpg 1653w "
+                sizes=" (max-width: 75em) 28vw, (max-width: 50em) 45vw, 520px" alt="New house" class="decision-pic__img decision-pic__img--2"
+                src="img/story-2-1653.jpg">
+
+            <!-- <img src="img/story-2.jpeg" alt="New house" class="decision-pic__img decision-pic__img--2"> -->
+        </div>
+
+        <div class="home">
+            <div class="home__card">
+                <!-- <img src="./img/house-1.jpeg" alt="home picture 1" class="home__img"> -->
+                <img srcset=" ./img/house-1_fuawzt_c_scale,w_210.jpg 210w, ./img/house-1_fuawzt_c_scale,w_304.jpg 304w, ./img/house-1_fuawzt_c_scale,w_379.jpg 379w, ./img/house-1_fuawzt_c_scale,w_449.jpg 449w, ./img/house-1_fuawzt_c_scale,w_507.jpg 507w, ./img/house-1_fuawzt_c_scale,w_559.jpg 559w, ./img/house-1_fuawzt_c_scale,w_608.jpg 608w, ./img/house-1_fuawzt_c_scale,w_654.jpg 654w, ./img/house-1_fuawzt_c_scale,w_698.jpg 698w, ./img/house-1_fuawzt_c_scale,w_742.jpg 742w, ./img/house-1_fuawzt_c_scale,w_783.jpg 783w, ./img/house-1_fuawzt_c_scale,w_821.jpg 821w, ./img/house-1_fuawzt_c_scale,w_855.jpg 855w, ./img/house-1_fuawzt_c_scale,w_894.jpg 894w, ./img/house-1_fuawzt_c_scale,w_928.jpg 928w, ./img/house-1_fuawzt_c_scale,w_964.jpg 964w, ./img/house-1_fuawzt_c_scale,w_1000.jpg 1000w "
+                    sizes=" (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px" alt="home picture 1"
+                    class="home__img" src="img/house-1_fuawzt_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Beautiful Familly House</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">USA</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">5 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">325 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$1,200,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home__card">
+                <!-- <img srcset=" ./img/house-2_fuawzt_c_scale,w_210.jpg 210w,  " 
+                sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                alt="home picture 2" 
+                class="home__img" 
+                src="img/house-2_fuawzt_c_scale,w_1000.jpg"
+            > -->
+
+                <img srcset=" ./img/house-2_ebo2lx_c_scale,w_210.jpg 210w, ./img/house-2_ebo2lx_c_scale,w_286.jpg 286w, ./img/house-2_ebo2lx_c_scale,w_352.jpg 352w, ./img/house-2_ebo2lx_c_scale,w_410.jpg 410w, ./img/house-2_ebo2lx_c_scale,w_463.jpg 463w, ./img/house-2_ebo2lx_c_scale,w_509.jpg 509w, ./img/house-2_ebo2lx_c_scale,w_562.jpg 562w, ./img/house-2_ebo2lx_c_scale,w_608.jpg 608w, ./img/house-2_ebo2lx_c_scale,w_650.jpg 650w, ./img/house-2_ebo2lx_c_scale,w_695.jpg 695w, ./img/house-2_ebo2lx_c_scale,w_736.jpg 736w, ./img/house-2_ebo2lx_c_scale,w_778.jpg 778w, ./img/house-2_ebo2lx_c_scale,w_817.jpg 817w, ./img/house-2_ebo2lx_c_scale,w_855.jpg 855w, ./img/house-2_ebo2lx_c_scale,w_896.jpg 896w, ./img/house-2_ebo2lx_c_scale,w_935.jpg 935w, ./img/house-2_ebo2lx_c_scale,w_968.jpg 968w, ./img/house-2_ebo2lx_c_scale,w_1000.jpg 1000w"
+                    sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                    alt="home picture 2" class="home__img" src="./img/house-2_ebo2lx_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Modern Glass Villa</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">Canada</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">6 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">450 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$2,750,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home__card">
+
+                <img srcset=" ./img/house-3_hv67zf_c_scale,w_210.jpg 210w, ./img/house-3_hv67zf_c_scale,w_304.jpg 304w, ./img/house-3_hv67zf_c_scale,w_379.jpg 379w, ./img/house-3_hv67zf_c_scale,w_451.jpg 451w, ./img/house-3_hv67zf_c_scale,w_510.jpg 510w, ./img/house-3_hv67zf_c_scale,w_559.jpg 559w, ./img/house-3_hv67zf_c_scale,w_610.jpg 610w, ./img/house-3_hv67zf_c_scale,w_657.jpg 657w, ./img/house-3_hv67zf_c_scale,w_704.jpg 704w, ./img/house-3_hv67zf_c_scale,w_749.jpg 749w, ./img/house-3_hv67zf_c_scale,w_793.jpg 793w, ./img/house-3_hv67zf_c_scale,w_831.jpg 831w, ./img/house-3_hv67zf_c_scale,w_875.jpg 875w, ./img/house-3_hv67zf_c_scale,w_915.jpg 915w, ./img/house-3_hv67zf_c_scale,w_956.jpg 956w, ./img/house-3_hv67zf_c_scale,w_1000.jpg 1000w "
+                    sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                    alt="home picture 3" class="home__img" src="img/house-3_hv67zf_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Cozy Country House</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">UK</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">4 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">250 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$850,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home__card">
+
+
+                <img srcset=" ./img/house-4_kyo4bp_c_scale,w_210.jpg 210w,./img/house-4_kyo4bp_c_scale,w_285.jpg 285w,./img/house-4_kyo4bp_c_scale,w_349.jpg 349w,./img/house-4_kyo4bp_c_scale,w_403.jpg 403w,./img/house-4_kyo4bp_c_scale,w_457.jpg 457w,./img/house-4_kyo4bp_c_scale,w_506.jpg 506w,./img/house-4_kyo4bp_c_scale,w_553.jpg 553w,./img/house-4_kyo4bp_c_scale,w_602.jpg 602w,./img/house-4_kyo4bp_c_scale,w_643.jpg 643w,./img/house-4_kyo4bp_c_scale,w_686.jpg 686w,./img/house-4_kyo4bp_c_scale,w_731.jpg 731w,./img/house-4_kyo4bp_c_scale,w_766.jpg 766w,./img/house-4_kyo4bp_c_scale,w_809.jpg 809w,./img/house-4_kyo4bp_c_scale,w_844.jpg 844w,./img/house-4_kyo4bp_c_scale,w_885.jpg 885w,./img/house-4_kyo4bp_c_scale,w_919.jpg 919w,./img/house-4_kyo4bp_c_scale,w_952.jpg 952w,./img/house-4_kyo4bp_c_scale,w_1000.jpg 1000w  "
+                    sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                    alt="home picture 4" class="home__img" src="img/house-4_kyo4bp_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Large Rustical Villa</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">Portugal</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">6 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">480 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$1,950,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home__card">
+
+                <img srcset=" ./img/house-5_ox9gp7_c_scale,w_210.jpg 210w, ./img/house-5_ox9gp7_c_scale,w_302.jpg 302w, ./img/house-5_ox9gp7_c_scale,w_375.jpg 375w, ./img/house-5_ox9gp7_c_scale,w_441.jpg 441w, ./img/house-5_ox9gp7_c_scale,w_495.jpg 495w, ./img/house-5_ox9gp7_c_scale,w_548.jpg 548w, ./img/house-5_ox9gp7_c_scale,w_600.jpg 600w, ./img/house-5_ox9gp7_c_648le,w_648.jpg 210w, ./img/house-5_ox9gp7_c_scale,w_694.jpg 694w, ./img/house-5_ox9gp7_c_scale,w_737.jpg 737w, ./img/house-5_ox9gp7_c_scale,w_779.jpg 779w, ./img/house-5_ox9gp7_c_scale,w_821.jpg 821w, ./img/house-5_ox9gp7_c_scale,w_865.jpg 865w, ./img/house-5_ox9gp7_c_scale,w_903.jpg 903w, ./img/house-5_ox9gp7_c_scale,w_949.jpg 949w, ./img/house-5_ox9gp7_c_scale,w_1000.jpg 1000w  "
+                    sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                    alt="home picture 5" class="home__img" src="img/house-5_ox9gp7_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Majestic Palace House</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">Germany</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">18 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">4230 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$9,500,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home__card">
+
+                <img srcset=" ./img/house-6_dvlpzt_c_scale,w_210.jpg 210w, ./img/house-6_dvlpzt_c_scale,w_275.jpg 275w, ./img/house-6_dvlpzt_c_scale,w_332.jpg 332w, ./img/house-6_dvlpzt_c_scale,w_386.jpg 386w, ./img/house-6_dvlpzt_c_scale,w_429.jpg 429w, ./img/house-6_dvlpzt_c_scale,w_479.jpg 479w, ./img/house-6_dvlpzt_c_scale,w_516.jpg 516w, ./img/house-6_dvlpzt_c_scale,w_554.jpg 554w, ./img/house-6_dvlpzt_c_scale,w_595.jpg 595w, ./img/house-6_dvlpzt_c_scale,w_631.jpg 631w, ./img/house-6_dvlpzt_c_scale,w_665.jpg 665w, ./img/house-6_dvlpzt_c_scale,w_701.jpg 701w, ./img/house-6_dvlpzt_c_scale,w_210.jpg 210w, ./img/house-6_dvlpzt_c_scale,w_738.jpg 738w, ./img/house-6_dvlpzt_c_scale,w_773.jpg 773w, ./img/house-6_dvlpzt_c_scale,w_802.jpg 802w, ./img/house-6_dvlpzt_c_scale,w_834.jpg 834w, ./img/house-6_dvlpzt_c_scale,w_865.jpg 865w, ./img/house-6_dvlpzt_c_scale,w_1000.jpg 1000w  "
+                    sizes=" (min-width: 112.5em) 24vw, (max-width: 75em) 27vw, (max-width: 50em) 40vw, (max-width: 35.5em) 79vw, 360px"
+                    alt="home picture 6" class="home__img" src="img/house-6_dvlpzt_c_scale,w_1000.jpg">
+
+                <svg class="home__icon-pic">
+                    <use xlink:href="./img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Modern Familiy Apartment</h5>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p class="home__text">Italy</p>
+                </div>
+
+
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p class="home__text">3 rooms</p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p class="home__text">180 m
+                        <sup>2</sup>
+                    </p>
+                </div>
+                <div class="home__details">
+                    <svg class="home__icon">
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p class="home__text">$600,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+        </div>
+
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img sizes="20vw" srcset="
+                    img/gal-1_cog18d_c_scale,w_125.jpg 125w,
+                    img/gal-1_cog18d_c_scale,w_177.jpg 177w,
+                    img/gal-1_cog18d_c_scale,w_220.jpg 220w,
+                    img/gal-1_cog18d_c_scale,w_260.jpg 260w,
+                    img/gal-1_cog18d_c_scale,w_294.jpg 294w,
+                    img/gal-1_cog18d_c_scale,w_323.jpg 323w,
+                    img/gal-1_cog18d_c_scale,w_355.jpg 355w,
+                    img/gal-1_cog18d_c_scale,w_385.jpg 385w,
+                    img/gal-1_cog18d_c_scale,w_398.jpg 398w,
+                    img/gal-1_cog18d_c_scale,w_400.jpg 400w" alt="gallery picture 1" class="gallery__img" src="img/gal-1_cog18d_c_scale,w_400.jpg">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2">
+                <img sizes="34vw" srcset="
+                    img/gal-2_ovy5aq_c_scale,w_200.jpg 200w,
+                    img/gal-2_ovy5aq_c_scale,w_256.jpg 256w,
+                    img/gal-2_ovy5aq_c_scale,w_305.jpg 305w,
+                    img/gal-2_ovy5aq_c_scale,w_347.jpg 347w,
+                    img/gal-2_ovy5aq_c_scale,w_387.jpg 387w,
+                    img/gal-2_ovy5aq_c_scale,w_428.jpg 428w,
+                    img/gal-2_ovy5aq_c_scale,w_466.jpg 466w,
+                    img/gal-2_ovy5aq_c_scale,w_499.jpg 499w,
+                    img/gal-2_ovy5aq_c_scale,w_528.jpg 528w,
+                    img/gal-2_ovy5aq_c_scale,w_559.jpg 559w,
+                    img/gal-2_ovy5aq_c_scale,w_589.jpg 589w,
+                    img/gal-2_ovy5aq_c_scale,w_616.jpg 616w,
+                    img/gal-2_ovy5aq_c_scale,w_643.jpg 643w,
+                    img/gal-2_ovy5aq_c_scale,w_669.jpg 669w,
+                    img/gal-2_ovy5aq_c_scale,w_698.jpg 698w,
+                    img/gal-2_ovy5aq_c_scale,w_723.jpg 723w,
+                    img/gal-2_ovy5aq_c_scale,w_748.jpg 748w,
+                    img/gal-2_ovy5aq_c_scale,w_773.jpg 773w,
+                    img/gal-2_ovy5aq_c_scale,w_798.jpg 798w,
+                    img/gal-2_ovy5aq_c_scale,w_820.jpg 820w,
+                    img/gal-2_ovy5aq_c_scale,w_847.jpg 847w,
+                    img/gal-2_ovy5aq_c_scale,w_869.jpg 869w,
+                    img/gal-2_ovy5aq_c_scale,w_890.jpg 890w,
+                    img/gal-2_ovy5aq_c_scale,w_913.jpg 913w,
+                    img/gal-2_ovy5aq_c_scale,w_937.jpg 937w,
+                    img/gal-2_ovy5aq_c_scale,w_957.jpg 957w,
+                    img/gal-2_ovy5aq_c_scale,w_978.jpg 978w,
+                    img/gal-2_ovy5aq_c_scale,w_999.jpg 999w,
+                    img/gal-2_ovy5aq_c_scale,w_1000.jpg 1000w" alt="gallery picture 2" class="gallery__img" src="img/gal-2_ovy5aq_c_scale,w_1000.jpg">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img sizes="11vw" srcset="
+                    ./img/gal-3_pdqfhj_c_scale,w_30.jpg 30w,
+                    ./img/gal-3_pdqfhj_c_scale,w_171.jpg 171w,
+                    ./img/gal-3_pdqfhj_c_scale,w_259.jpg 259w,
+                    ./img/gal-3_pdqfhj_c_scale,w_333.jpg 333w,
+                    ./img/gal-3_pdqfhj_c_scale,w_393.jpg 393w,
+                    ./img/gal-3_pdqfhj_c_scale,w_450.jpg 450w,
+                    ./img/gal-3_pdqfhj_c_scale,w_501.jpg 501w,
+                    ./img/gal-3_pdqfhj_c_scale,w_550.jpg 550w,
+                    ./img/gal-3_pdqfhj_c_scale,w_596.jpg 596w,
+                    ./img/gal-3_pdqfhj_c_scale,w_642.jpg 642w,
+                    ./img/gal-3_pdqfhj_c_scale,w_684.jpg 684w,
+                    ./img/gal-3_pdqfhj_c_scale,w_725.jpg 725w,
+                    ./img/gal-3_pdqfhj_c_scale,w_765.jpg 765w,
+                    ./img/gal-3_pdqfhj_c_scale,w_808.jpg 808w,
+                    ./img/gal-3_pdqfhj_c_scale,w_843.jpg 843w,
+                    ./img/gal-3_pdqfhj_c_scale,w_881.jpg 881w,
+                    ./img/gal-3_pdqfhj_c_scale,w_921.jpg 921w,
+                    ./img/gal-3_pdqfhj_c_scale,w_953.jpg 953w,
+                    ./img/gal-3_pdqfhj_c_scale,w_993.jpg 993w,
+                    ./img/gal-3_pdqfhj_c_scale,w_999.jpg 999w,
+                    ./img/gal-3_pdqfhj_c_scale,w_1000.jpg 1000w" src="./img/gal-3_pdqfhj_c_scale,w_1000.jpg" alt="gallery picture 3"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img sizes="23vw" srcset="
+                    ./img/gal-4_hyhqcd_c_scale,w_70.jpg 70w,
+                    ./img/gal-4_hyhqcd_c_scale,w_174.jpg 174w,
+                    ./img/gal-4_hyhqcd_c_scale,w_245.jpg 245w,
+                    ./img/gal-4_hyhqcd_c_scale,w_305.jpg 305w,
+                    ./img/gal-4_hyhqcd_c_scale,w_358.jpg 358w,
+                    ./img/gal-4_hyhqcd_c_scale,w_408.jpg 408w,
+                    ./img/gal-4_hyhqcd_c_scale,w_469.jpg 469w,
+                    ./img/gal-4_hyhqcd_c_scale,w_481.jpg 481w,
+                    ./img/gal-4_hyhqcd_c_scale,w_514.jpg 514w,
+                    ./img/gal-4_hyhqcd_c_scale,w_548.jpg 548w,
+                    ./img/gal-4_hyhqcd_c_scale,w_580.jpg 580w,
+                    ./img/gal-4_hyhqcd_c_scale,w_611.jpg 611w,
+                    ./img/gal-4_hyhqcd_c_scale,w_642.jpg 642w,
+                    ./img/gal-4_hyhqcd_c_scale,w_673.jpg 673w,
+                    ./img/gal-4_hyhqcd_c_scale,w_703.jpg 703w,
+                    ./img/gal-4_hyhqcd_c_scale,w_732.jpg 732w,
+                    ./img/gal-4_hyhqcd_c_scale,w_757.jpg 757w,
+                    ./img/gal-4_hyhqcd_c_scale,w_782.jpg 782w,
+                    ./img/gal-4_hyhqcd_c_scale,w_809.jpg 809w,
+                    ./img/gal-4_hyhqcd_c_scale,w_835.jpg 835w,
+                    ./img/gal-4_hyhqcd_c_scale,w_858.jpg 858w,
+                    ./img/gal-4_hyhqcd_c_scale,w_882.jpg 882w,
+                    ./img/gal-4_hyhqcd_c_scale,w_912.jpg 912w,
+                    ./img/gal-4_hyhqcd_c_scale,w_935.jpg 935w,
+                    ./img/gal-4_hyhqcd_c_scale,w_956.jpg 956w,
+                    ./img/gal-4_hyhqcd_c_scale,w_979.jpg 979w,
+                    ./img/gal-4_hyhqcd_c_scale,w_996.jpg 996w,
+                    ./img/gal-4_hyhqcd_c_scale,w_1000.jpg 1000w" src="./img/gal-4_hyhqcd_c_scale,w_1000.jpg" alt="gallery picture 4"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img sizes="23vw" srcset="
+                    ./img/gal-5_lq0ult_c_scale,w_70.jpg 70w,
+                    ./img/gal-5_lq0ult_c_scale,w_163.jpg 163w,
+                    ./img/gal-5_lq0ult_c_scale,w_233.jpg 233w,
+                    ./img/gal-5_lq0ult_c_scale,w_288.jpg 288w,
+                    ./img/gal-5_lq0ult_c_scale,w_337.jpg 337w,
+                    ./img/gal-5_lq0ult_c_scale,w_384.jpg 384w,
+                    ./img/gal-5_lq0ult_c_scale,w_422.jpg 422w,
+                    ./img/gal-5_lq0ult_c_scale,w_459.jpg 459w,
+                    ./img/gal-5_lq0ult_c_scale,w_496.jpg 496w,
+                    ./img/gal-5_lq0ult_c_scale,w_526.jpg 526w,
+                    ./img/gal-5_lq0ult_c_scale,w_561.jpg 561w,
+                    ./img/gal-5_lq0ult_c_scale,w_591.jpg 591w,
+                    ./img/gal-5_lq0ult_c_scale,w_618.jpg 618w,
+                    ./img/gal-5_lq0ult_c_scale,w_648.jpg 648w,
+                    ./img/gal-5_lq0ult_c_scale,w_675.jpg 675w,
+                    ./img/gal-5_lq0ult_c_scale,w_699.jpg 699w,
+                    ./img/gal-5_lq0ult_c_scale,w_725.jpg 725w,
+                    ./img/gal-5_lq0ult_c_scale,w_750.jpg 750w,
+                    ./img/gal-5_lq0ult_c_scale,w_774.jpg 774w,
+                    ./img/gal-5_lq0ult_c_scale,w_803.jpg 803w,
+                    ./img/gal-5_lq0ult_c_scale,w_826.jpg 826w,
+                    ./img/gal-5_lq0ult_c_scale,w_850.jpg 850w,
+                    ./img/gal-5_lq0ult_c_scale,w_871.jpg 871w,
+                    ./img/gal-5_lq0ult_c_scale,w_894.jpg 894w,
+                    ./img/gal-5_lq0ult_c_scale,w_915.jpg 915w,
+                    ./img/gal-5_lq0ult_c_scale,w_937.jpg 937w,
+                    ./img/gal-5_lq0ult_c_scale,w_962.jpg 962w,
+                    ./img/gal-5_lq0ult_c_scale,w_984.jpg 984w,
+                    ./img/gal-5_lq0ult_c_scale,w_998.jpg 998w,
+                    ./img/gal-5_lq0ult_c_scale,w_999.jpg 999w,
+                    ./img/gal-5_lq0ult_c_scale,w_1000.jpg 1000w" src="./img/gal-5_lq0ult_c_scale,w_1000.jpg" alt="gallery picture 5"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img sizes="23vw" srcset="
+                    ./img/gal-6_z5sxq1_c_scale,w_70.jpg 70w,
+                    ./img/gal-6_z5sxq1_c_scale,w_174.jpg 174w,
+                    ./img/gal-6_z5sxq1_c_scale,w_245.jpg 245w,
+                    ./img/gal-6_z5sxq1_c_scale,w_305.jpg 305w,
+                    ./img/gal-6_z5sxq1_c_scale,w_361.jpg 361w,
+                    ./img/gal-6_z5sxq1_c_scale,w_405.jpg 405w,
+                    ./img/gal-6_z5sxq1_c_scale,w_452.jpg 452w,
+                    ./img/gal-6_z5sxq1_c_scale,w_494.jpg 494w,
+                    ./img/gal-6_z5sxq1_c_scale,w_528.jpg 528w,
+                    ./img/gal-6_z5sxq1_c_scale,w_560.jpg 560w,
+                    ./img/gal-6_z5sxq1_c_scale,w_593.jpg 593w,
+                    ./img/gal-6_z5sxq1_c_scale,w_628.jpg 628w,
+                    ./img/gal-6_z5sxq1_c_scale,w_664.jpg 664w,
+                    ./img/gal-6_z5sxq1_c_scale,w_692.jpg 692w,
+                    ./img/gal-6_z5sxq1_c_scale,w_720.jpg 720w,
+                    ./img/gal-6_z5sxq1_c_scale,w_747.jpg 747w,
+                    ./img/gal-6_z5sxq1_c_scale,w_776.jpg 776w,
+                    ./img/gal-6_z5sxq1_c_scale,w_806.jpg 806w,
+                    ./img/gal-6_z5sxq1_c_scale,w_831.jpg 831w,
+                    ./img/gal-6_z5sxq1_c_scale,w_857.jpg 857w,
+                    ./img/gal-6_z5sxq1_c_scale,w_881.jpg 881w,
+                    ./img/gal-6_z5sxq1_c_scale,w_906.jpg 906w,
+                    ./img/gal-6_z5sxq1_c_scale,w_930.jpg 930w,
+                    ./img/gal-6_z5sxq1_c_scale,w_955.jpg 955w,
+                    ./img/gal-6_z5sxq1_c_scale,w_984.jpg 984w,
+                    ./img/gal-6_z5sxq1_c_scale,w_997.jpg 997w,
+                    ./img/gal-6_z5sxq1_c_scale,w_1000.jpg 1000w" src="./img/gal-6_z5sxq1_c_scale,w_1000.jpg" alt="gallery picture 6"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+                <img sizes="11vw" srcset="
+                    ./img/gal-7_e1buzh_c_scale,w_30.jpg 30w,
+                    ./img/gal-7_e1buzh_c_scale,w_148.jpg 148w,
+                    ./img/gal-7_e1buzh_c_scale,w_219.jpg 219w,
+                    ./img/gal-7_e1buzh_c_scale,w_278.jpg 278w,
+                    ./img/gal-7_e1buzh_c_scale,w_324.jpg 324w,
+                    ./img/gal-7_e1buzh_c_scale,w_365.jpg 365w,
+                    ./img/gal-7_e1buzh_c_scale,w_401.jpg 401w,
+                    ./img/gal-7_e1buzh_c_scale,w_435.jpg 435w,
+                    ./img/gal-7_e1buzh_c_scale,w_464.jpg 464w,
+                    ./img/gal-7_e1buzh_c_scale,w_496.jpg 496w,
+                    ./img/gal-7_e1buzh_c_scale,w_523.jpg 523w,
+                    ./img/gal-7_e1buzh_c_scale,w_551.jpg 551w,
+                    ./img/gal-7_e1buzh_c_scale,w_579.jpg 579w,
+                    ./img/gal-7_e1buzh_c_scale,w_603.jpg 603w,
+                    ./img/gal-7_e1buzh_c_scale,w_628.jpg 628w,
+                    ./img/gal-7_e1buzh_c_scale,w_654.jpg 654w,
+                    ./img/gal-7_e1buzh_c_scale,w_679.jpg 679w,
+                    ./img/gal-7_e1buzh_c_scale,w_699.jpg 699w,
+                    ./img/gal-7_e1buzh_c_scale,w_721.jpg 721w,
+                    ./img/gal-7_e1buzh_c_scale,w_744.jpg 744w,
+                    ./img/gal-7_e1buzh_c_scale,w_766.jpg 766w,
+                    ./img/gal-7_e1buzh_c_scale,w_785.jpg 785w,
+                    ./img/gal-7_e1buzh_c_scale,w_808.jpg 808w,
+                    ./img/gal-7_e1buzh_c_scale,w_830.jpg 830w,
+                    ./img/gal-7_e1buzh_c_scale,w_848.jpg 848w,
+                    ./img/gal-7_e1buzh_c_scale,w_868.jpg 868w,
+                    ./img/gal-7_e1buzh_c_scale,w_887.jpg 887w,
+                    ./img/gal-7_e1buzh_c_scale,w_910.jpg 910w,
+                    ./img/gal-7_e1buzh_c_scale,w_929.jpg 929w,
+                    ./img/gal-7_e1buzh_c_scale,w_949.jpg 949w,
+                    ./img/gal-7_e1buzh_c_scale,w_969.jpg 969w,
+                    ./img/gal-7_e1buzh_c_scale,w_991.jpg 991w,
+                    ./img/gal-7_e1buzh_c_scale,w_998.jpg 998w,
+                    ./img/gal-7_e1buzh_c_scale,w_1000.jpg 1000w" src="./img/gal-7_e1buzh_c_scale,w_1000.jpg" alt="gallery picture 7"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--8">
+                <img sizes="23vw" srcset="
+                    ./img/gal-8_bxogga_c_scale,w_70.jpg 70w,
+                    ./img/gal-8_bxogga_c_scale,w_162.jpg 162w,
+                    ./img/gal-8_bxogga_c_scale,w_224.jpg 224w,
+                    ./img/gal-8_bxogga_c_scale,w_279.jpg 279w,
+                    ./img/gal-8_bxogga_c_scale,w_326.jpg 326w,
+                    ./img/gal-8_bxogga_c_scale,w_365.jpg 365w,
+                    ./img/gal-8_bxogga_c_scale,w_398.jpg 398w,
+                    ./img/gal-8_bxogga_c_scale,w_433.jpg 433w,
+                    ./img/gal-8_bxogga_c_scale,w_462.jpg 462w,
+                    ./img/gal-8_bxogga_c_scale,w_494.jpg 494w,
+                    ./img/gal-8_bxogga_c_scale,w_527.jpg 527w,
+                    ./img/gal-8_bxogga_c_scale,w_548.jpg 548w,
+                    ./img/gal-8_bxogga_c_scale,w_577.jpg 577w,
+                    ./img/gal-8_bxogga_c_scale,w_601.jpg 601w,
+                    ./img/gal-8_bxogga_c_scale,w_628.jpg 628w,
+                    ./img/gal-8_bxogga_c_scale,w_651.jpg 651w,
+                    ./img/gal-8_bxogga_c_scale,w_673.jpg 673w,
+                    ./img/gal-8_bxogga_c_scale,w_697.jpg 697w,
+                    ./img/gal-8_bxogga_c_scale,w_720.jpg 720w,
+                    ./img/gal-8_bxogga_c_scale,w_743.jpg 743w,
+                    ./img/gal-8_bxogga_c_scale,w_766.jpg 766w,
+                    ./img/gal-8_bxogga_c_scale,w_784.jpg 784w,
+                    ./img/gal-8_bxogga_c_scale,w_804.jpg 804w,
+                    ./img/gal-8_bxogga_c_scale,w_824.jpg 824w,
+                    ./img/gal-8_bxogga_c_scale,w_845.jpg 845w,
+                    ./img/gal-8_bxogga_c_scale,w_865.jpg 865w,
+                    ./img/gal-8_bxogga_c_scale,w_885.jpg 885w,
+                    ./img/gal-8_bxogga_c_scale,w_908.jpg 908w,
+                    ./img/gal-8_bxogga_c_scale,w_926.jpg 926w,
+                    ./img/gal-8_bxogga_c_scale,w_945.jpg 945w,
+                    ./img/gal-8_bxogga_c_scale,w_965.jpg 965w,
+                    ./img/gal-8_bxogga_c_scale,w_986.jpg 986w,
+                    ./img/gal-8_bxogga_c_scale,w_999.jpg 999w,
+                    ./img/gal-8_bxogga_c_scale,w_1000.jpg 1000w" src="./img/gal-8_bxogga_c_scale,w_1000.jpg" alt="gallery picture 8"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--9">
+                <img sizes="11vw" srcset="
+                    ./img/gal-9_l11hby_c_scale,w_30.jpg 30w,
+                    ./img/gal-9_l11hby_c_scale,w_150.jpg 150w,
+                    ./img/gal-9_l11hby_c_scale,w_227.jpg 227w,
+                    ./img/gal-9_l11hby_c_scale,w_292.jpg 292w,
+                    ./img/gal-9_l11hby_c_scale,w_350.jpg 350w,
+                    ./img/gal-9_l11hby_c_scale,w_400.jpg 400w,
+                    ./img/gal-9_l11hby_c_scale,w_446.jpg 446w,
+                    ./img/gal-9_l11hby_c_scale,w_492.jpg 492w,
+                    ./img/gal-9_l11hby_c_scale,w_535.jpg 535w,
+                    ./img/gal-9_l11hby_c_scale,w_572.jpg 572w,
+                    ./img/gal-9_l11hby_c_scale,w_612.jpg 612w,
+                    ./img/gal-9_l11hby_c_scale,w_649.jpg 649w,
+                    ./img/gal-9_l11hby_c_scale,w_684.jpg 684w,
+                    ./img/gal-9_l11hby_c_scale,w_720.jpg 720w,
+                    ./img/gal-9_l11hby_c_scale,w_757.jpg 757w,
+                    ./img/gal-9_l11hby_c_scale,w_788.jpg 788w,
+                    ./img/gal-9_l11hby_c_scale,w_818.jpg 818w,
+                    ./img/gal-9_l11hby_c_scale,w_850.jpg 850w,
+                    ./img/gal-9_l11hby_c_scale,w_881.jpg 881w,
+                    ./img/gal-9_l11hby_c_scale,w_910.jpg 910w,
+                    ./img/gal-9_l11hby_c_scale,w_942.jpg 942w,
+                    ./img/gal-9_l11hby_c_scale,w_972.jpg 972w,
+                    ./img/gal-9_l11hby_c_scale,w_997.jpg 997w,
+                    ./img/gal-9_l11hby_c_scale,w_999.jpg 999w,
+                    ./img/gal-9_l11hby_c_scale,w_1000.jpg 1000w" src="./img/gal-9_l11hby_c_scale,w_1000.jpg" alt="gallery picture 9"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--10">
+                <img sizes="11vw" srcset="
+                    ./img/gal-10_uegpsk_c_scale,w_30.jpg 30w,
+                    ./img/gal-10_uegpsk_c_scale,w_147.jpg 147w,
+                    ./img/gal-10_uegpsk_c_scale,w_221.jpg 221w,
+                    ./img/gal-10_uegpsk_c_scale,w_271.jpg 271w,
+                    ./img/gal-10_uegpsk_c_scale,w_316.jpg 316w,
+                    ./img/gal-10_uegpsk_c_scale,w_357.jpg 357w,
+                    ./img/gal-10_uegpsk_c_scale,w_392.jpg 392w,
+                    ./img/gal-10_uegpsk_c_scale,w_426.jpg 426w,
+                    ./img/gal-10_uegpsk_c_scale,w_458.jpg 458w,
+                    ./img/gal-10_uegpsk_c_scale,w_488.jpg 488w,
+                    ./img/gal-10_uegpsk_c_scale,w_514.jpg 514w,
+                    ./img/gal-10_uegpsk_c_scale,w_541.jpg 541w,
+                    ./img/gal-10_uegpsk_c_scale,w_568.jpg 568w,
+                    ./img/gal-10_uegpsk_c_scale,w_593.jpg 593w,
+                    ./img/gal-10_uegpsk_c_scale,w_616.jpg 616w,
+                    ./img/gal-10_uegpsk_c_scale,w_639.jpg 639w,
+                    ./img/gal-10_uegpsk_c_scale,w_661.jpg 661w,
+                    ./img/gal-10_uegpsk_c_scale,w_684.jpg 684w,
+                    ./img/gal-10_uegpsk_c_scale,w_705.jpg 705w,
+                    ./img/gal-10_uegpsk_c_scale,w_724.jpg 724w,
+                    ./img/gal-10_uegpsk_c_scale,w_745.jpg 745w,
+                    ./img/gal-10_uegpsk_c_scale,w_765.jpg 765w,
+                    ./img/gal-10_uegpsk_c_scale,w_784.jpg 784w,
+                    ./img/gal-10_uegpsk_c_scale,w_804.jpg 804w,
+                    ./img/gal-10_uegpsk_c_scale,w_823.jpg 823w,
+                    ./img/gal-10_uegpsk_c_scale,w_841.jpg 841w,
+                    ./img/gal-10_uegpsk_c_scale,w_858.jpg 858w,
+                    ./img/gal-10_uegpsk_c_scale,w_880.jpg 880w,
+                    ./img/gal-10_uegpsk_c_scale,w_894.jpg 894w,
+                    ./img/gal-10_uegpsk_c_scale,w_913.jpg 913w,
+                    ./img/gal-10_uegpsk_c_scale,w_929.jpg 929w,
+                    ./img/gal-10_uegpsk_c_scale,w_948.jpg 948w,
+                    ./img/gal-10_uegpsk_c_scale,w_969.jpg 969w,
+                    ./img/gal-10_uegpsk_c_scale,w_990.jpg 990w,
+                    ./img/gal-10_uegpsk_c_scale,w_995.jpg 995w,
+                    ./img/gal-10_uegpsk_c_scale,w_1000.jpg 1000w" src="./img/gal-10_uegpsk_c_scale,w_1000.jpg" alt="gallery picture 10"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--11">
+                <img sizes="23vw" srcset="
+                    ./img/gal-11_ykorwe_c_scale,w_70.jpg 70w,
+                    ./img/gal-11_ykorwe_c_scale,w_169.jpg 169w,
+                    ./img/gal-11_ykorwe_c_scale,w_241.jpg 241w,
+                    ./img/gal-11_ykorwe_c_scale,w_301.jpg 301w,
+                    ./img/gal-11_ykorwe_c_scale,w_355.jpg 355w,
+                    ./img/gal-11_ykorwe_c_scale,w_401.jpg 401w,
+                    ./img/gal-11_ykorwe_c_scale,w_447.jpg 447w,
+                    ./img/gal-11_ykorwe_c_scale,w_493.jpg 493w,
+                    ./img/gal-11_ykorwe_c_scale,w_535.jpg 535w,
+                    ./img/gal-11_ykorwe_c_scale,w_572.jpg 572w,
+                    ./img/gal-11_ykorwe_c_scale,w_612.jpg 612w,
+                    ./img/gal-11_ykorwe_c_scale,w_647.jpg 647w,
+                    ./img/gal-11_ykorwe_c_scale,w_680.jpg 680w,
+                    ./img/gal-11_ykorwe_c_scale,w_713.jpg 713w,
+                    ./img/gal-11_ykorwe_c_scale,w_748.jpg 748w,
+                    ./img/gal-11_ykorwe_c_scale,w_784.jpg 784w,
+                    ./img/gal-11_ykorwe_c_scale,w_813.jpg 813w,
+                    ./img/gal-11_ykorwe_c_scale,w_847.jpg 847w,
+                    ./img/gal-11_ykorwe_c_scale,w_877.jpg 877w,
+                    ./img/gal-11_ykorwe_c_scale,w_903.jpg 903w,
+                    ./img/gal-11_ykorwe_c_scale,w_937.jpg 937w,
+                    ./img/gal-11_ykorwe_c_scale,w_966.jpg 966w,
+                    ./img/gal-11_ykorwe_c_scale,w_995.jpg 995w,
+                    ./img/gal-11_ykorwe_c_scale,w_998.jpg 998w,
+                    ./img/gal-11_ykorwe_c_scale,w_1000.jpg 1000w" src="./img/gal-11_ykorwe_c_scale,w_1000.jpg" alt="gallery picture 11"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--12">
+                <img sizes="11vw" srcset="
+                    ./img/gal-12_uvrsxj_c_scale,w_30.jpg 30w,
+                    ./img/gal-12_uvrsxj_c_scale,w_173.jpg 173w,
+                    ./img/gal-12_uvrsxj_c_scale,w_265.jpg 265w,
+                    ./img/gal-12_uvrsxj_c_scale,w_342.jpg 342w,
+                    ./img/gal-12_uvrsxj_c_scale,w_411.jpg 411w,
+                    ./img/gal-12_uvrsxj_c_scale,w_470.jpg 470w,
+                    ./img/gal-12_uvrsxj_c_scale,w_525.jpg 525w,
+                    ./img/gal-12_uvrsxj_c_scale,w_578.jpg 578w,
+                    ./img/gal-12_uvrsxj_c_scale,w_622.jpg 622w,
+                    ./img/gal-12_uvrsxj_c_scale,w_668.jpg 668w,
+                    ./img/gal-12_uvrsxj_c_scale,w_713.jpg 713w,
+                    ./img/gal-12_uvrsxj_c_scale,w_757.jpg 757w,
+                    ./img/gal-12_uvrsxj_c_scale,w_799.jpg 799w,
+                    ./img/gal-12_uvrsxj_c_scale,w_835.jpg 835w,
+                    ./img/gal-12_uvrsxj_c_scale,w_873.jpg 873w,
+                    ./img/gal-12_uvrsxj_c_scale,w_913.jpg 913w,
+                    ./img/gal-12_uvrsxj_c_scale,w_948.jpg 948w,
+                    ./img/gal-12_uvrsxj_c_scale,w_985.jpg 985w,
+                    ./img/gal-12_uvrsxj_c_scale,w_999.jpg 999w,
+                    ./img/gal-12_uvrsxj_c_scale,w_1000.jpg 1000w" src="./img/gal-12_uvrsxj_c_scale,w_1000.jpg" alt="gallery picture 12"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--13">
+                <img sizes="34vw" srcset="
+                    ./img/gal-13_khwhcb_c_scale,w_100.jpg 100w,
+                    ./img/gal-13_khwhcb_c_scale,w_174.jpg 174w,
+                    ./img/gal-13_khwhcb_c_scale,w_231.jpg 231w,
+                    ./img/gal-13_khwhcb_c_scale,w_282.jpg 282w,
+                    ./img/gal-13_khwhcb_c_scale,w_321.jpg 321w,
+                    ./img/gal-13_khwhcb_c_scale,w_365.jpg 365w,
+                    ./img/gal-13_khwhcb_c_scale,w_398.jpg 398w,
+                    ./img/gal-13_khwhcb_c_scale,w_431.jpg 431w,
+                    ./img/gal-13_khwhcb_c_scale,w_466.jpg 466w,
+                    ./img/gal-13_khwhcb_c_scale,w_494.jpg 494w,
+                    ./img/gal-13_khwhcb_c_scale,w_524.jpg 524w,
+                    ./img/gal-13_khwhcb_c_scale,w_550.jpg 550w,
+                    ./img/gal-13_khwhcb_c_scale,w_577.jpg 577w,
+                    ./img/gal-13_khwhcb_c_scale,w_603.jpg 603w,
+                    ./img/gal-13_khwhcb_c_scale,w_631.jpg 631w,
+                    ./img/gal-13_khwhcb_c_scale,w_656.jpg 656w,
+                    ./img/gal-13_khwhcb_c_scale,w_677.jpg 677w,
+                    ./img/gal-13_khwhcb_c_scale,w_701.jpg 701w,
+                    ./img/gal-13_khwhcb_c_scale,w_724.jpg 724w,
+                    ./img/gal-13_khwhcb_c_scale,w_749.jpg 749w,
+                    ./img/gal-13_khwhcb_c_scale,w_769.jpg 769w,
+                    ./img/gal-13_khwhcb_c_scale,w_792.jpg 792w,
+                    ./img/gal-13_khwhcb_c_scale,w_815.jpg 815w,
+                    ./img/gal-13_khwhcb_c_scale,w_840.jpg 840w,
+                    ./img/gal-13_khwhcb_c_scale,w_857.jpg 857w,
+                    ./img/gal-13_khwhcb_c_scale,w_878.jpg 878w,
+                    ./img/gal-13_khwhcb_c_scale,w_897.jpg 897w,
+                    ./img/gal-13_khwhcb_c_scale,w_927.jpg 927w,
+                    ./img/gal-13_khwhcb_c_scale,w_939.jpg 939w,
+                    ./img/gal-13_khwhcb_c_scale,w_974.jpg 974w,
+                    ./img/gal-13_khwhcb_c_scale,w_980.jpg 980w,
+                    ./img/gal-13_khwhcb_c_scale,w_998.jpg 998w,
+                    ./img/gal-13_khwhcb_c_scale,w_999.jpg 999w,
+                    ./img/gal-13_khwhcb_c_scale,w_1000.jpg 1000w" src="./img/gal-13_khwhcb_c_scale,w_1000.jpg" alt="gallery picture 13"
+                    class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--14">
+                <img sizes="11vw" srcset="
+                    ./img/gal-14_utlxwc_c_scale,w_30.jpg 30w,
+                    ./img/gal-14_utlxwc_c_scale,w_148.jpg 148w,
+                    ./img/gal-14_utlxwc_c_scale,w_212.jpg 212w,
+                    ./img/gal-14_utlxwc_c_scale,w_269.jpg 269w,
+                    ./img/gal-14_utlxwc_c_scale,w_314.jpg 314w,
+                    ./img/gal-14_utlxwc_c_scale,w_356.jpg 356w,
+                    ./img/gal-14_utlxwc_c_scale,w_390.jpg 390w,
+                    ./img/gal-14_utlxwc_c_scale,w_421.jpg 421w,
+                    ./img/gal-14_utlxwc_c_scale,w_451.jpg 451w,
+                    ./img/gal-14_utlxwc_c_scale,w_481.jpg 481w,
+                    ./img/gal-14_utlxwc_c_scale,w_510.jpg 510w,
+                    ./img/gal-14_utlxwc_c_scale,w_537.jpg 537w,
+                    ./img/gal-14_utlxwc_c_scale,w_563.jpg 563w,
+                    ./img/gal-14_utlxwc_c_scale,w_585.jpg 585w,
+                    ./img/gal-14_utlxwc_c_scale,w_610.jpg 610w,
+                    ./img/gal-14_utlxwc_c_scale,w_636.jpg 636w,
+                    ./img/gal-14_utlxwc_c_scale,w_657.jpg 657w,
+                    ./img/gal-14_utlxwc_c_scale,w_679.jpg 679w,
+                    ./img/gal-14_utlxwc_c_scale,w_722.jpg 722w,
+                    ./img/gal-14_utlxwc_c_scale,w_727.jpg 727w,
+                    ./img/gal-14_utlxwc_c_scale,w_763.jpg 763w,
+                    ./img/gal-14_utlxwc_c_scale,w_781.jpg 781w,
+                    ./img/gal-14_utlxwc_c_scale,w_803.jpg 803w,
+                    ./img/gal-14_utlxwc_c_scale,w_823.jpg 823w,
+                    ./img/gal-14_utlxwc_c_scale,w_841.jpg 841w,
+                    ./img/gal-14_utlxwc_c_scale,w_858.jpg 858w,
+                    ./img/gal-14_utlxwc_c_scale,w_879.jpg 879w,
+                    ./img/gal-14_utlxwc_c_scale,w_898.jpg 898w,
+                    ./img/gal-14_utlxwc_c_scale,w_916.jpg 916w,
+                    ./img/gal-14_utlxwc_c_scale,w_934.jpg 934w,
+                    ./img/gal-14_utlxwc_c_scale,w_952.jpg 952w,
+                    ./img/gal-14_utlxwc_c_scale,w_972.jpg 972w,
+                    ./img/gal-14_utlxwc_c_scale,w_990.jpg 990w,
+                    ./img/gal-14_utlxwc_c_scale,w_998.jpg 998w,
+                    ./img/gal-14_utlxwc_c_scale,w_1000.jpg 1000w" src="./img/gal-14_utlxwc_c_scale,w_1000.jpg" alt="gallery picture 14"
+                    class="gallery__img">
+            </figure>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__btn-box">
+                <a href="#" class="footer__btn">find your dream home</a>
+                <a href="#" class="footer__btn">request proposal</a>
+                <a href="#" class="footer__btn">download home planner</a>
+                <a href="#" class="footer__btn">contact us</a>
+                <a href="#" class="footer__btn">submit your property</a>
+                <a href="#" class="footer__btn">come work with us!</a>
+            </div>
+            <div class="footer__copyright">
+                &copy; Built by Md Nazmul Hoque Bhuiyan as a part of his online course. Original design was done by Jonas Schmedtmann. A
+                credit to the original author, is of course highly appreciated if you use it.
+            </div>
+        </footer>
+
     </div>
+
+
+
 
 </body>
 
